@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tipos de inputs</h1>
+    <form action="procesa.php">
+    <fieldset>
+        <Legend>Datos personales</Legend>
+    <label for="nombre">Nombre</label>
+    <input type="text" maxlength="6" name="Nombre"
+    id="nombre">
+    <p>
+        <label for="contrase" >Contraseña</label>
+        <input type="password" id="contrase" maxlength="6" name="contrase">
+    </p>
+    <p>
+       <label for="hombre">Hombre</label> : 
+        <input type="radio" value="H" checked id="hombre" name="genero">
+        <label for="mujer">Mujer</label>
+             <input type="radio" value="M" checked id="mujer" name="genero" >
+
+    </p>
+    <p>
+        <label for="fumador">Fumador:</label>
+<input type="checkbox" name="fuma" id="fumador" checked>    
+
+</p>
+</fieldset>
+<p>
+    <label for="provincia">Provincia</label>
+    <select name="provincia" id="provincia">
+        <option value="cr">Ciudad Real</option>
+        <option value="ab">Albacete</option>
+        <option value="gu">Guadalajara</option>
+        <option value="cu">Cuenca</option>
+        <option value="to" selected>Toledo</option>
+    </select>
+    <p>
+        <label for="">Observaciones</label>
+        <p><textarea name="obs" id="obs" cols="10" rows="6">Escriba algo aquí...</textarea></p>
+        <label for="color">Color</label>
+        <input type="color" name="color"
+        id="color">
+        <p>
+            <label for="fecha">Fecha de nacimiento</label>
+        <input type="date" name="fecha"
+        id="fecha">
+        </p>
+        <label for="edad">Edad</label>
+        <input type="number" name="edad"
+        id="edad" min="0" max="100">
+    </p>
+    <label for="email">Email</label>
+        <input type="email" name="email"
+        id="email">
+        <p>
+            <label for="foto">Adjuntar foto</label>
+        <input type="file" name="foto"
+        id="foto">
+        </p>
+</p>
+<p>
+<input type="submit" value="Enviar">
+<input type="reset" value="reiniciar formulario">
+</p>
+</form>
+<a href="index.html">Volver</a>
+</body>
+</html>
